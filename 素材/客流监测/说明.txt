@@ -1,0 +1,3 @@
+background2.png 透明度：45%
+
+panel底色 透明度：50%
