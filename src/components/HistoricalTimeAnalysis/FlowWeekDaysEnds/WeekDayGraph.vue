@@ -1,7 +1,5 @@
 <template>
-  <div id="week-day-graph">
-
-  </div>
+  <div id="week-day-graph"></div>
 </template>
 
 <script>

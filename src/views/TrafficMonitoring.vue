@@ -70,9 +70,10 @@
   #traffic-monitoring{
     background-image: url("../assets/trafficMonitoring/background2.png");
     background-size: 100% 100%;
-    width: 1175px;
+    width: 1150px;
     height: 588px;
-    margin-top: 5px;
+    margin-top: 6px;
+    margin-left: 11px;
   }
   .left,.right{
     height: 588px;

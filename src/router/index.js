@@ -10,50 +10,38 @@ import TrafficMonitoring from "../views/TrafficMonitoring";
 import SystemSettings from "../views/SystemSettings";
 import FlowWeekDaysEnds from "../views/HistoricalTimeAnalysis/FlowWeekDaysEnds";
 import MorningAndEvening from "../views/HistoricalTimeAnalysis/MorningAndEvening";
+//空间客流
+import FlowInAndOut from "../views/HistoricalSpatialAnalysis/FlowInAndOut";
+import FlowOd from "../views/HistoricalSpatialAnalysis/FlowOd";
 
 const routes = [
   {
     path:'',
     redirect:'/TrafficMonitoring',
-    meta: {
-      keepAlive: true // 需要被缓存
-    }
   },
   {
     path: '/TrafficMonitoring',
     component:TrafficMonitoring,
-    meta: {
-      keepAlive: true // 需要被缓存
-    }
   },
   {
     path: '/FlowMonth',//单月客流
     component: FlowMonth,
-    meta: {
-      keepAlive: true // 需要被缓存
-    }
   },
   {
     path: '/FlowWeekDaysEnds',//工作日客流
     component: FlowWeekDaysEnds,
-    meta: {
-      keepAlive: true // 需要被缓存
-    }
   },
   {
-    path: '/MorningAndEvening',//早晚客流
+    path: '/MorningAndEvening',//早晚高峰客流
     component: MorningAndEvening,
-    meta: {
-      keepAlive: true // 需要被缓存
-    }
   },
   {
-    path: '/IntelligentDecision',
-    component: IntelligentDecision
+    path: '/FlowInAndOut',//各站点客流流入流出
+    component: FlowInAndOut
   },
   {
-    path: '/SystemSettings',
-    component: SystemSettings
+    path: '/FlowOd',//OD客流分析
+    component: FlowOd
   },
   {
     path: '/HistoricalSpatialAnalysis',

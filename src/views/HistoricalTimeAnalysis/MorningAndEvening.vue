@@ -42,8 +42,8 @@
 <style scoped>
   #morning-and-evening{
     width: 1175px;
-    height: 588px;
-    margin-top: 20px;
+    height: 580px;
+    margin-top: 10px;
   }
   .eighth-block,.tenth-block,.ninth-block{
     background-image: url("../../assets/black.png");
@@ -52,7 +52,7 @@
   .eighth-block{
     display: inline-block;
     width: 730px;
-    height: 580px;
+    height: 570px;
     margin-left: 30px;
   }
   .right-graph{
@@ -66,7 +66,7 @@
   .tenth-block{
     margin-top: 10px;
     width: 350px;
-    height: 210px;
+    height: 200px;
   }
 
 </style>

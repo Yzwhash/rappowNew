@@ -36,7 +36,7 @@
 <style scoped>
   #flow-week-days-ends{
     width: 1175px;
-    height: 600px;
+    height: 580px;
     margin-top: 5px;
   }
   .fifth-block,.sixth-block,.seventh-block{
@@ -50,12 +50,12 @@
   }
   .sixth-block{
     width: 750px;
-    height: 390px;
+    height: 380px;
     margin: 10px 0 0 30px;
   }
   .seventh-block{
     width: 338px;
-    height: 190px;
+    height: 185px;
     margin: 10px 0 0 30px;
   }
 

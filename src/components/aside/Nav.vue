@@ -10,8 +10,8 @@
       </at-submenu>
       <at-submenu>
         <template slot="title"><i class="icon icon-life-buoy"></i>历史空间分析</template>
-        <at-menu-item name="3-1" to="/HistoricalSpatialAnalysis">各站点出/入站客流</at-menu-item>
-        <at-menu-item name="3-2" to="/HistoricalSpatialAnalysis">站点OD客流</at-menu-item>
+        <at-menu-item name="3-1" to="/FlowInAndOut">各站点出/入站客流</at-menu-item>
+        <at-menu-item name="3-2" to="/FlowOd">站点OD客流</at-menu-item>
         <at-menu-item name="3-3" to="/HistoricalSpatialAnalysis">线路断面客流量</at-menu-item>
         <at-menu-item name="3-4" to="/HistoricalSpatialAnalysis">列车满载率</at-menu-item>
         <at-menu-item name="3-5" to="/HistoricalSpatialAnalysis">客流清分</at-menu-item>

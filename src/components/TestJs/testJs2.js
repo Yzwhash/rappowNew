@@ -2937,8 +2937,8 @@ export let option2 = ({
     top: 10
   },
   //不设置背景颜色就是透明色
-  backgroundColor: '#000',
   xAxis: {
+
     show: false,
     min: 0,
     max: 1200,
@@ -2963,15 +2963,6 @@ export let option2 = ({
     zlevel: 5,
     draggable: false,
     coordinateSystem: "cartesian2d", //使用二维的直角坐标系（也称笛卡尔坐标系）
-
-    // edgeSymbolSize: [0, 8], //边两端的标记大小，可以是一个数组分别指定两端，也可以是单个统一指定
-    // edgeLabel: {
-    //   normal: {
-    //     textStyle: {
-    //       fontSize: 60
-    //     }
-    //   }
-    // },
     symbol: "rect",
     symbolOffset: ["15%", 0],
 

@@ -36,6 +36,9 @@ export default new Vuex.Store({
         workday:'',
         hour:''
       },
+    },
+    data3:{//站点出入客流单日
+
     }
   },
   mutations: {
