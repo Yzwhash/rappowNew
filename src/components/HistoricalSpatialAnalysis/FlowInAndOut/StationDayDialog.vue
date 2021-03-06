@@ -22,6 +22,8 @@
 <script>
   import SelectPlu2 from "../../form/SelectPlu2";
   import SelectPluDay from "../../form/SelectPluDay";
+  import {requestAll} from "../../../network/requests";
+
   export default {
     name: "StationDayDialog",
     data(){
@@ -42,9 +44,25 @@
         this.day=data
       },
       sendContent(){
-        this.dialogVisible = false
-        console.log(this.day,this.station)
+        const config={
+          url:'/Rappow/staDailyFlow',
+          params:{
+            sta:this.station,
+            date:this.day
+          }
+        }
+        requestAll(config).then(res=>{
+          this.dialogVisible=false
+          this.$store.commit('upDateDay', {
+            data:res.data,
+            time:this.day,
+            sta:this.station
+          })
+        })
       }
+    },
+    mounted() {
+      this.sendContent()
     }
   }
 </script>

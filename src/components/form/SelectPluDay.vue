@@ -3,7 +3,10 @@
     <el-date-picker
             v-model="date"
             type="date"
-            placeholder="选择日期">
+            @change="submitDay"
+            placeholder="选择日期"
+            format="yyyy-MM-dd"
+            value-format="yyyy-MM-dd">>
     </el-date-picker>
   </div>
 </template>

@@ -12,13 +12,18 @@
     },
     mounted() {
       this.myChart = this.$echarts.init(document.getElementById('single-day-graph'))
-      this.drawTwoInAndOutLine()
     },
     methods:{
       drawTwoInAndOutLine(){
         this.myChart.setOption({
           title:{
-            text: '本站点客流量变化',
+            text: this.$store.state.data3.title,
+            textStyle:{
+              color:'#fff'
+            }
+          },
+          legend: {
+            data: ['入站','出站'],
             textStyle:{
               color:'#fff'
             }
@@ -26,20 +31,28 @@
           tooltip: {},
           xAxis: {
             type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            data: this.$store.state.data3.time
           },
           yAxis: {
-            type: 'value'
+            type: 'value',
+            axisLabel: {
+              formatter: '{value}/人次'
+            },
+            axisPointer: {
+              snap: true
+            }
           },
           series: [{
-            data: [820, 932, 901, 934, 1290, 1330, 1320],
+            name:'入站',
+            data: this.$store.state.data3.flowIn,
             type: 'line',
             smooth: true,
             emphasis: {
               focus: 'series'
             },
           },{
-            data: [1820, 1932, 1901, 1934, 2290, 2330, 2320],
+            name:'出站',
+            data: this.$store.state.data3.flowOut,
             type: 'line',
             smooth: true,
             emphasis: {
@@ -47,7 +60,16 @@
             },
           }]
         })
-
+      }
+    },
+    computed:{
+      watchTwo(){
+        return this.$store.state.data3.flowIn
+      }
+    },
+    watch:{
+      watchTwo(){
+        this.drawTwoInAndOutLine()
       }
     }
   }

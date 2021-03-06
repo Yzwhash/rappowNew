@@ -42,29 +42,6 @@
               snap: true
             }
           },
-          visualMap: {
-            show: false,
-            dimension: 0,
-            pieces: [{
-              lte: 6,
-              color: 'green'
-            }, {
-              gt: 6,
-              lte: 8,
-              color: 'red'
-            }, {
-              gt: 8,
-              lte: 14,
-              color: 'green'
-            }, {
-              gt: 14,
-              lte: 17,
-              color: 'red'
-            }, {
-              gt: 17,
-              color: 'green'
-            }]
-          },
           series: [
             {
               name: '人次',

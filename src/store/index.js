@@ -38,7 +38,10 @@ export default new Vuex.Store({
       },
     },
     data3:{//站点出入客流单日
-
+      time:'',
+      flowIn:'',
+      flowOut:'',
+      title:''
     }
   },
   mutations: {
@@ -160,6 +163,24 @@ export default new Vuex.Store({
       state.data2.hoursOut.holiday=holiday2
 
       console.log(state.data2.holidayAndWeek)
+    },
+    //站点客流分析
+    upDateDay(state,payload){
+
+      let time=[]
+      let flowIn=[]
+      let flowOut=[]
+      for (let item of payload.data.inSta){
+        time.push(item.hour)
+        flowIn.push(item.flow)
+      }
+      for (let item of payload.data.outSta){
+        flowOut.push(item.flow)
+      }
+      state.data3.time=time
+      state.data3.flowIn=flowIn
+      state.data3.flowOut=flowOut
+      state.data3.title='Station'+payload.sta+' '+payload.time+'出入站客流情况'
     }
   },
   actions: {
