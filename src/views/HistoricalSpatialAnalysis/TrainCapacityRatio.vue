@@ -4,7 +4,7 @@
 
 <script>
   export default {
-    name: "PredictiveAnalysis"
+    name: "TrainCapacityRatio"
   }
 </script>
 

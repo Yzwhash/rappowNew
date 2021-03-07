@@ -38,7 +38,7 @@
     background-image: url("./assets/entirety/background.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 1366px;
+    width: 100%;
   }
 
 </style>

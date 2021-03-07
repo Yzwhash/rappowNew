@@ -4,7 +4,7 @@
 
 <script>
   export default {
-    name: "HistoricalUserAnalysis"
+    name: "TimeDimension"
   }
 </script>
 

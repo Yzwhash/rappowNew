@@ -12,19 +12,19 @@
         <template slot="title"><i class="icon icon-life-buoy"></i>历史空间分析</template>
         <at-menu-item name="3-1" to="/FlowInAndOut">各站点出/入站客流</at-menu-item>
         <at-menu-item name="3-2" to="/FlowOd">站点OD客流</at-menu-item>
-        <at-menu-item name="3-3" to="/HistoricalSpatialAnalysis">线路断面客流量</at-menu-item>
-        <at-menu-item name="3-4" to="/HistoricalSpatialAnalysis">列车满载率</at-menu-item>
-        <at-menu-item name="3-5" to="/HistoricalSpatialAnalysis">客流清分</at-menu-item>
+        <at-menu-item name="3-3" to="/FLowLineSection">线路断面客流量</at-menu-item>
+        <at-menu-item name="3-4" to="/TrainCapacityRatio">列车满载率</at-menu-item>
+        <at-menu-item name="3-5" to="/FlowDistribution">客流清分</at-menu-item>
       </at-submenu>
       <at-submenu>
         <template slot="title"><i class="icon icon-life-buoy"></i>历史用户分析</template>
-        <at-menu-item name="4-1">用户年龄结构</at-menu-item>
-        <at-menu-item name="4-2">用户来源地</at-menu-item>
+        <at-menu-item name="4-1" to="/AgeStructure">用户年龄结构</at-menu-item>
+        <at-menu-item name="4-2" to="/UserSource">用户来源地</at-menu-item>
       </at-submenu>
       <at-submenu>
         <template slot="title"><i class="icon icon-life-buoy"></i>预测分析</template>
-        <at-menu-item name="5-1">时间维度</at-menu-item>
-        <at-menu-item name="5-2">空间维度</at-menu-item>
+        <at-menu-item name="5-1" to="/TimeDimension">时间维度</at-menu-item>
+        <at-menu-item name="5-2" to="/SpatialDimension">空间维度</at-menu-item>
       </at-submenu>
       <at-menu-item name="6" to="/IntelligentDecision"><i class="icon icon-home"></i>智能决策</at-menu-item>
       <at-menu-item name="7" to="/SystemSettings"><i class="icon icon-home"></i>系统设置</at-menu-item>
