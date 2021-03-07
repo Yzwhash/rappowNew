@@ -26,7 +26,12 @@
         <at-menu-item name="5-1" to="/TimeDimension">时间维度</at-menu-item>
         <at-menu-item name="5-2" to="/SpatialDimension">空间维度</at-menu-item>
       </at-submenu>
-      <at-menu-item name="6" to="/IntelligentDecision"><i class="icon icon-home"></i>智能决策</at-menu-item>
+      <at-submenu>
+        <template slot="title"><i class="icon icon icon-home"></i>智能决策</template>
+        <at-menu-item name="6-1" to="/ManpowerScheduling">人力排班</at-menu-item>
+        <at-menu-item name="6-2" to="/TreatmentProcess">处理流程</at-menu-item>
+        <at-menu-item name="6-3" to="/ActivityTimeLine">活动时间线</at-menu-item>
+      </at-submenu>
       <at-menu-item name="7" to="/SystemSettings"><i class="icon icon-home"></i>系统设置</at-menu-item>
     </at-menu>
   </div>

@@ -5,8 +5,6 @@ Vue.use(VueRouter)
 
 // 客流监测
 import TrafficMonitoring from "../views/TrafficMonitoring";
-//智能决策
-import IntelligentDecision from "../views/IntelligentDecision";
 //系统设置
 import SystemSettings from "../views/SystemSettings";
 //时间客流
@@ -25,6 +23,10 @@ import UserSource from "../views/HistoricalUserAnalysis/UserSource";
 //预测分析
 import TimeDimension from "../views/PredictiveAnalysis/TimeDimension";
 import SpatialDimension from "../views/PredictiveAnalysis/SpatialDimension";
+//智能决策
+import ActivityTimeLine from "../views/IntelligentDecision/ActivityTimeLine";
+import ManpowerScheduling from "../views/IntelligentDecision/ManpowerScheduling";
+import TreatmentProcess from "../views/IntelligentDecision/TreatmentProcess";
 
 const routes = [
   {
@@ -84,8 +86,16 @@ const routes = [
     component: SpatialDimension
   },
   {
-    path: '/IntelligentDecision',
-    component: IntelligentDecision
+    path: '/ManpowerScheduling',//人力排班
+    component: ManpowerScheduling
+  },
+  {
+    path: '/TreatmentProcess',//处理流程
+    component: TreatmentProcess
+  },
+  {
+    path: '/ActivityTimeLine',//活动时间线
+    component: ActivityTimeLine
   },
   {
     path: '/SystemSettings',//系统设置
