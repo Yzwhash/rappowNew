@@ -1,49 +1,8 @@
 let os_title = "本团游客年龄段分析";
-let os_bgc = "#38445E";
 
 let os_age = ['0~18岁', '19~24岁', '25~34岁', '35~44岁', '45~54岁', '55~64岁', '65~75岁', '75岁上'];
 let os_agevalue = [0, 2, 3, 18, 4, 2, 2, 1];
-
-let os_poi = [{
-    name: '广东',
-    value: 4
-  },
-  {
-    name: '浙江',
-    value: 3
-  },
-  {
-    name: '上海',
-    value: 5
-  },
-  {
-    name: '北京',
-    value: 6
-  },
-  {
-    name: '江苏',
-    value: 28
-  },
-  {
-    name: '安徽',
-    value: 2
-  },
-  {
-    name: '山东',
-    value: 2
-  },
-  {
-    name: '四川',
-    value: 1
-  },
-  {
-    name: '湖南',
-    value: 4
-  }
-]
-
 export let option = {
-  backgroundColor: os_bgc,
   title: {
     text: os_title,
     x: "2%",
@@ -51,10 +10,6 @@ export let option = {
     textStyle: {
       color: '#fff',
       fontSize: '20'
-    },
-    subtextStyle: {
-      color: '#ddd',
-      fontSize: '12'
     },
   },
   grid: {
@@ -69,9 +24,6 @@ export let option = {
       type: 'none'
     },
     formatter: "{a} :<br/>{b}，共 {c} 人"
-    /*formatter: function(params) {
-        return params[0].name + ': ' + params[0].value;
-    }*/
   },
   xAxis: {
     data: os_age,
@@ -142,8 +94,6 @@ export let option = {
           y: 0,
           x2: 0,
           y2: 1,
-          //45, 140, 240  #2D8CF0   OTAS蓝
-          //232, 94, 106  #DB5E6A   暗红
           colorStops: [{
             offset: 0,
             color: 'rgba(45, 140, 240, .8)' //  0%  处的颜色

@@ -42,6 +42,15 @@ export default new Vuex.Store({
       flowIn:'',
       flowOut:'',
       title:''
+    },
+    data4:{//年龄结构
+      time:'',
+      age:'',
+      flow:'',
+      genderDiv:{
+        manRate:'',
+        womanRate:''
+      }
     }
   },
   mutations: {
@@ -181,6 +190,21 @@ export default new Vuex.Store({
       state.data3.flowIn=flowIn
       state.data3.flowOut=flowOut
       state.data3.title='Station'+payload.sta+' '+payload.time+'出入站客流情况'
+    },
+    upDateAge(state,payload){
+      let age=[]
+      let flow=[]
+      for(let item of payload.data.ageDiv){
+        age.push(item.age)
+        flow.push(item.flow)
+      }
+      state.data4.time=payload.time
+      state.data4.age=age
+      state.data4.flow=flow
+      state.data4.genderDiv.manRate=payload.data.genderDiv.manRate
+      state.data4.genderDiv.womanRate=payload.data.genderDiv.womanRate
+      console.log(state.data4.age)
+      console.log(state.data4.flow)
     }
   },
   actions: {
