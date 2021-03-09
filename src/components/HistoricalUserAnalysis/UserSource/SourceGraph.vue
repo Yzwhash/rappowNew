@@ -1,5 +1,7 @@
 <template>
-  <div id="source-graph"></div>
+  <div id="source-graph">
+    Hello
+  </div>
 </template>
 
 <script>
