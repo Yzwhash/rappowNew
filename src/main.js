@@ -12,6 +12,14 @@ import 'at-ui-style'    // 引入组件样式
 import VueResource from 'vue-resource'
 import axios from "axios";
 
+import Highcharts from 'highcharts'
+import Timeline from 'highcharts/modules/timeline'
+import HighchartsVue from 'highcharts-vue'
+Timeline(Highcharts)
+Vue.use(HighchartsVue, {
+  highcharts: Highcharts
+})
+
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(AtComponents)

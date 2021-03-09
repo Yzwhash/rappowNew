@@ -1,16 +1,16 @@
 <template>
-  <div id="source-graph"></div>
+  <div id="map-graph"></div>
 </template>
 
 <script>
   export default {
-    name: "SourceGraph",
+    name: "MapGraph"
   }
 </script>
 
 <style scoped>
-  #source-graph{
-    width: 1110px;
+  #map-graph{
+    width: 700px;
     height: 570px;
   }
 </style>

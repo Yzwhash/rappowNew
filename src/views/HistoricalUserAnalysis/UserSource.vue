@@ -1,10 +1,16 @@
 <template>
-  <div id="user-source"></div>
+  <div id="user-source">
+<!--    <source-graph></source-graph>-->
+  </div>
 </template>
 
 <script>
+  import SourceGraph from "../../components/HistoricalUserAnalysis/UserSource/SourceGraph";
   export default {
-    name: "UserSource"
+    name: "UserSource",
+    components:{
+      SourceGraph
+    }
   }
 </script>
 

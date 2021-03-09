@@ -97,9 +97,6 @@
     width:90%;
   }
   thead th{
-    /*font-size: 13px;*/
-    /*line-height: 24px;*/
-    /*padding: 0 8px 2px;*/
     width: 30%;
     text-align:center;
     padding-right: 4px;
